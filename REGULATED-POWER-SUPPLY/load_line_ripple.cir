@@ -1,0 +1,45 @@
+Load line and Ripple of Regulated Power Supply
+
+.control
+source regulated-supply.cir
+
+compose vec_rl start=150 stop=2000 step=80
+let index = 0
+let N = length(vec_rl)
+
+let vec_rps_rms = unitvec(N)
+let vec_rps_avg = unitvec(N)
+let vec_i_rms = unitvec(N)
+
+while index le N
+        alter RL vec_rl[index]
+        run
+        let k = length(v(rps))
+        let vec_rps_rms[index] = sqrt(mean(v(rps)[nint(k/2), k-1]^2))
+        let vec_rps_avg[index] = mean(v(rps)[nint(k/2), k-1])
+        let vec_i_rms[index] = sqrt(mean(i(V0)[nint(k/2), k-1]^2))
+        let index = index + 1
+        clear tran
+end
+let ripple_factor = sqrt(abs(vec_rps_rms/vec_rps_avg)^2 - 1)
+print vec_i_rms vec_rps_rms vec_rps_avg ripple_factor
+
+set hcopydevtype=svg
+set color0=white
+set color1=blue
+set nolegend
+
+
+hardcopy plots/plot_ripple_factor.svg ripple_factor vs vec_i_rms
++title 'Ripple Factor' xlabel 'i(regulated)' ylabel 'Ripple Factor'
+
+shell convert plots/plot_ripple_factor.svg plots/plot_ripple_factor.pdf
+
+
+hardcopy plots/plot_load_line.svg vec_i_rms vs vec_rps_rms
++title 'Load Line' xlabel 'v(regulated)' ylabel 'i(regulated)'
+
+shell convert plots/plot_load_line.svg plots/plot_load_line.pdf
+exit
+.endc
+.end

@@ -1,0 +1,117 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="blue" font-size="16" x="358" y="752">
+v(unregulated)
+</text>
+<text transform="rotate(-90, 20, 444)"  stroke="none" fill="blue" font-size="16" x="20" y="444">
+v(regulated)
+</text>
+<text stroke="none" fill="blue" font-size="16" x="10" y="16">
+tran13: output line
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="75" y="728">
+13.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M173 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="153" y="728">
+14.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M251 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="231" y="728">
+15.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M329 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="309" y="728">
+16.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M407 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="387" y="728">
+17.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M485 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="465" y="728">
+18.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M563 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="543" y="728">
+19.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M641 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="621" y="728">
+20.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M719 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="699" y="728">
+21.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M797 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="777" y="728">
+22.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M875 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="855" y="728">
+23.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M953 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="933" y="728">
+24.0
+</text>
+<text stroke="none" fill="blue" font-size="16" x="614" y="752">
+     
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 704l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="712">
+11.85
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 624l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="632">
+11.90
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 544l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="552">
+11.95
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 464l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="472">
+12.00
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 384l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="392">
+12.05
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 304l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="312">
+12.10
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 224l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="232">
+12.15
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 144l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="152">
+12.20
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M95 64l858 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="72">
+12.25
+</text>
+<text stroke="none" fill="blue" font-size="16" x="10" y="32">
+     
+</text>
+<path stroke="red" d="M429 23l42 0"/>
+<text stroke="none" fill="blue" font-size="16" x="481" y="32">
+vec_output_rms
+</text>
+<path stroke="red" d="M109 678l77 -127 76 -80 76 -63 76 -53 77 -48 76 -43 76 -41 76 -38 77 -37 76 -35 76 -33"/>
+</svg>

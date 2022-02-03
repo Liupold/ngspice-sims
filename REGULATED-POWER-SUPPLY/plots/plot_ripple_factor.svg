@@ -1,0 +1,105 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+  width="100%" height="100%" viewBox="0 0 1024 768"
+  style="fill: none; font-family: Helvetica;
+ font: Helvetica;
+">
+
+<!-- Creator: NGspice -->
+
+<rect x="0" y="0" width="1024" height="768" fill="white" stroke="none"/>
+<text stroke="none" fill="blue" font-size="16" x="358" y="752">
+i(regulated)
+</text>
+<text transform="rotate(-90, 20, 449)"  stroke="none" fill="blue" font-size="16" x="20" y="449">
+ripple factor
+</text>
+<text stroke="none" fill="blue" font-size="16" x="10" y="16">
+tran25: ripple factor
+</text>
+<path stroke="blue" d="M75 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="60" y="728">
+0.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M174 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="154" y="728">
+10.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M273 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="253" y="728">
+20.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M372 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="352" y="728">
+30.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M471 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="451" y="728">
+40.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M570 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="550" y="728">
+50.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M669 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="649" y="728">
+60.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M768 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="748" y="728">
+70.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M867 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="847" y="728">
+80.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M966 704l0 -640"/>
+<text stroke="none" fill="blue" font-size="16" x="946" y="728">
+90.0
+</text>
+<text stroke="none" fill="blue" font-size="16" x="614" y="752">
+m     
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 704l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="712">
+0.4
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 624l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="632">
+0.6
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 544l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="552">
+0.8
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 464l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="472">
+1.0
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 384l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="392">
+1.2
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 304l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="312">
+1.4
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 224l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="232">
+1.6
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 144l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="152">
+1.8
+</text>
+<path stroke="blue" stroke-dasharray="1,2" d="M75 64l891 0"/>
+<text stroke="none" fill="blue" font-size="16" x="43" y="72">
+2.0
+</text>
+<text stroke="none" fill="blue" font-size="16" x="10" y="32">
+m     
+</text>
+<path stroke="red" d="M868 138l-276 234 -133 103 -79 58 -52 37 -36 26 -28 20 -21 15 -17 11 -14 10 -12 8 -9 7 -9 5 -7 5 -6 4 -6 4 -5 4 -4 2 -4 3 -4 2 -3 3 -3 2 -3 1 -2 2"/>
+</svg>

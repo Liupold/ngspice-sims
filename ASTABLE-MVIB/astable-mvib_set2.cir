@@ -1,0 +1,41 @@
+Astable Multiibrator (set2).
+
+.model BC546B npn ( IS=7.59E-15 VAF=73.4 BF=480 IKF=0.0962 NE=1.2665
++ ISE=3.278E-15 IKR=0.03 ISC=2.00E-13 NC=1.2 NR=1 BR=5 RC=0.25 CJC=6.33E-12
++ FC=0.5 MJC=0.33 VJC=0.65 CJE=1.25E-11 MJE=0.55 VJE=0.65 TF=4.26E-10
++ ITF=0.6 VTF=3 XTF=20 RB=100 IRB=0.0001 RBM=10 RE=0.5 TR=1.50E-07)
+
+*****************************************
+* Netlist
+V1 vcc 0 12
+Rc1 vcc a 1k
+R1 vcc b 5.18k
+R2 vcc c 5.18k
+Rc2 vcc d 1k
+
+C1 a b 0.2u
+C2 c d 0.2u
+
+Q1 a c 0 BC546B
+Q2 d b 0 BC546B
+*****************************************
+
+.ic v(b) 0
+
+* Control commands
+.control
+set hcopydevtype=svg
+set color0=white
+set color1=blue
+tran 1u 0.2 0.195
+* print v(a) v(c)
+hardcopy plot2_a.svg a
+hardcopy plot2_c.svg c
+hardcopy plot2_d.svg d
+hardcopy plot2_b.svg b
+hardcopy plot2_d.svg d
+shell convert -append plot2_a.svg plot2_c.svg plot2_q1.png
+shell convert -append plot2_d.svg plot2_b.svg plot2_q2.png
+quit
+.endc
+.end

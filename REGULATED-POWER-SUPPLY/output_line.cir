@@ -1,0 +1,35 @@
+Regulated Power Supply
+
+.control
+source regulated-supply.cir
+* set load at 600
+alter RL 600
+
+compose vec_va start=15 stop=26 step=1
+let index = 0
+let N = length(vec_va)
+
+let vec_input_rms = unitvec(N)
+let vec_output_rms = unitvec(N)
+
+while index le N
+        let act_v = vec_va[index]
+        alter @vac[sin] [ 0 $&act_v 50 ]
+        run
+        let k = length(v(rps))
+        let vec_input_rms[index] = sqrt(mean(v(urps)[nint(k/2), k-1]^2))
+        let vec_output_rms[index] = sqrt(mean(v(rps)[nint(k/2), k-1]^2))
+        let index = index + 1
+end
+
+print vec_input_rms vec_output_rms
+
+set hcopydevtype=svg
+set color0=white
+set color1=blue
+hardcopy plots/plot_output_line.svg vec_output_rms vs vec_input_rms
++title 'Output Line' ylabel 'v(regulated)' xlabel 'v(unregulated)'
+shell convert plots/plot_output_line.svg plots/plot_output_line.pdf
+exit
+.endc
+.end

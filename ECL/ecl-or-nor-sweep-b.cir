@@ -1,0 +1,40 @@
+ECL (OR-NOR) [VB(5)-SWEEP]
+
+.model BC107 NPN(Is=40.72f Vaf=21.03 Bf=407 Ise=40.72f Ne=1.305 Ikf=1
++Xtb=1.5 Isc=594.8p Nc=2.033 Ikr=3.726 Rc=1.393 Cjc=6p
++Mjc=.3821 Cje=12.5p Mje=.4869 Vje=.5391 Tr=114n Tf=441.1p )
+
+*****************************************
+* Netlist
+Vcc 8 0 -5
+V1 1 0 0
+
+R1 1 2 1k
+R2 1 4 1k
+RE 3 8 2k
+
+Q1 2 5 3 BC107
+Q2 2 6 3 BC107
+Q3 4 7 3 BC107
+
+VR 7 0 -1.3
+VA 5 0 -2
+VB 6 0 dc 0
+*****************************************
+
+.DC VB -1.6 -1 30m
+* Control commands
+.control
+run
+set hcopydevtype=svg
+set color0=white
+set color1=blue
+set color2=green
+set color3=red
+
+print v(2) v(4) v(3, 8) / 2k
+hardcopy vb-sweep.svg v(2) v(4)
+shell convert vb-sweep.svg vb-sweep.pdf
+exit
+.endc
+.end
