@@ -1,4 +1,4 @@
-Regulated Power Supply
+Output line Regulated Power Supply
 
 .control
 source regulated-supply.cir
@@ -23,6 +23,7 @@ while index le N
 end
 
 print vec_input_rms vec_output_rms
+print vec_input_rms vec_output_rms > data-outline
 
 set hcopydevtype=svg
 set color0=white
