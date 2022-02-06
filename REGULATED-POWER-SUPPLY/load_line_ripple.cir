@@ -22,9 +22,9 @@ while index le N
         clear tran
 end
 let ripple_factor = sqrt(abs(vec_rps_rms/vec_rps_avg)^2 - 1)
-print vec_i_rms vec_rps_rms vec_rps_avg ripple_factor
+print vec_i_rms vec_rps_rms vec_rps_avg ripple_factor vec_rl
 
-print vec_i_rms vec_rps_rms vec_rps_avg ripple_factor > data-load_nd_ripple
+print vec_i_rms vec_rps_rms vec_rps_avg ripple_factor vec_rl > data-load_nd_ripple.txt
 
 set hcopydevtype=svg
 set color0=white
