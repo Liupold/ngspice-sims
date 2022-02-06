@@ -17,7 +17,7 @@ v(unregulated)
 v(regulated)
 </text>
 <text stroke="none" fill="blue" font-size="16" x="10" y="16">
-tran13: output line
+tran13: line regulation
 </text>
 <path stroke="blue" stroke-dasharray="1,2" d="M95 704l0 -640"/>
 <text stroke="none" fill="blue" font-size="16" x="75" y="728">

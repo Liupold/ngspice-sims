@@ -29,7 +29,7 @@ set hcopydevtype=svg
 set color0=white
 set color1=blue
 hardcopy plots/plot_output_line.svg vec_output_rms vs vec_input_rms
-+title 'Output Line' ylabel 'v(regulated)' xlabel 'v(unregulated)'
++title 'Line Regulation' ylabel 'v(regulated)' xlabel 'v(unregulated)'
 shell convert plots/plot_output_line.svg plots/plot_output_line.pdf
 exit
 .endc

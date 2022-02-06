@@ -1,6 +1,5 @@
 Regulated Power Supply
 
-
 .model BC107 NPN(Is=40.72f Vaf=21.03 Bf=407 Ise=40.72f Ne=1.305 Ikf=1
 +Xtb=1.5 Isc=594.8p Nc=2.033 Ikr=3.726 Rc=1.393 Cjc=6p
 +Mjc=.3821 Cje=12.5p Mje=.4869 Vje=.5391 Tr=114n Tf=441.1p )
@@ -14,7 +13,7 @@ Regulated Power Supply
 + Nbv=.74348)
 
 * Ac source
-Vac ac 0 SIN 0 18 50
+Vac ac 0 SIN 21 15 50
 
 *  Basic unregulated Power supply (urps, 0)
 D1 ac urps 1N4001
@@ -26,10 +25,10 @@ C1 urps 0 1000u
 * Regulated Power supply (rps, 0)
 Q1 urps q1b q1e BC107
 Q2 q1b q2b q2e BC107
-R1 urps q1b 450
-R2 q1e q2e 1.28k
-R3 q1e q2b 1.26k
-R4 q2b 0 1.14k
+R3 urps q1b 450
+RS q1e q2e 1.28k
+R1 q1e q2b 1.26k
+R2 q2b 0 1.14k
 Dz1 0 q2e 1N4733
 
 * rename node.
